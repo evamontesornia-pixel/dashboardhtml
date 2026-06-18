@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumen ejecutivo — métricas de impacto digital · datos.gob.es</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #E8E6E4;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+    /* Escala tipográfica global */
+    .db { zoom: 1.28; -webkit-text-size-adjust: none; }
+    .db .kpi-lbl, .db .cbar-hdr span, .db .sec-hdr span,
+    .db .pub-hdr span, .db .pub-num, .db .ia-k-lbl,
+    .db .rrss-seg-lbl, .db .rrss-k-lbl, .db .repo-hdr span,
+    .db .li, .db .conc-label, .db .glos-num, .db .badge,
+    .db .sec { font-size: 11px !important; }
+    /* datos de tabla y controles */
+    .db .card-t, .db .cname, .db .cnum, .db .cdelta,
+    .db .pub-title, .db .pub-vistas, .db .repo-name, .db .repo-val,
+    .db .kpi-lbl2, .db .fl, .db .fv, .db .note, .db .fn
+    { font-size: 13px !important; }
+    /* textos explicativos: misma familia, tamaño y color uniformes */
+    .db .comment-text, .db .rrss-ctext, .db .bol-p,
+    .db .glos-text, .db .conc-text
+    { font-size: 10.5px !important; color: #555 !important; line-height: 1.65 !important; font-weight: 400 !important; }
+    .db .hd-sub, .db .hd-pill { font-size: 11px !important; }
+    .db .hd-logo, .db .rrss-net-name { font-size: 14px !important; }
+    .db .hd-title { font-size: 15px !important; }
+    .db .kpi-val, .db .rrss-seg-big { font-size: 26px !important; }
+    .db .rrss-k-val, .db .ia-k-val, .db .sent-score { font-size: 20px !important; }
+    .page-wrapper {
+      max-width: 1280px;
+      margin: 40px auto;
+      padding: 0 100px;
+    }
+    @media (max-width: 1100px) {
+      .page-wrapper {
+        padding: 0 60px;
+      }
+    }
+    @media (max-width: 900px) {
+      .page-wrapper {
+        padding: 0 24px;
+        margin: 16px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+
+<h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden">Resumen ejecutivo mensual de métricas de impacto digital — datos.gob.es con datos ficticios.</h2>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.db{background:#F3F2F1;font-size:11px;overflow:hidden}
+.hd{background:#1D3557;padding:8px 14px;display:flex;align-items:center;justify-content:space-between}
+.hd-left{display:flex;align-items:center;gap:10px}
+.hd-logo{background:#2A4A6B;border-radius:3px;padding:4px 10px;font-size:11px;color:#fff;font-weight:500}
+.hd-title{color:#fff;font-size:13px;font-weight:500}
+.hd-sub{color:#89B4D9;font-size:10px;margin-top:1px}
+.hd-pill{background:#2A4A6B;color:#B5D4F4;font-size:10px;padding:3px 10px;border-radius:12px}
+.fb{background:#fff;border-bottom:1px solid #E1DFDD;padding:5px 14px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.fl{font-size:10px;color:#605E5C}
+.fv{background:#F3F2F1;border:0.5px solid #C8C6C4;border-radius:2px;padding:2px 8px;font-size:10px;color:#201F1E;display:flex;align-items:center;gap:4px}
+.note{margin-left:auto;font-size:10px;color:#A19F9D;font-style:italic}
+.body{padding:8px 16px 8px 10px;display:flex;flex-direction:column;gap:7px}
+.sec{font-size:9px;font-weight:500;color:#605E5C;text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px;padding-left:1px;display:flex;align-items:center;gap:5px}
+.sec-line{flex:1;height:0.5px;background:#E1DFDD}
+.card{background:#fff;border:0.5px solid #E1DFDD;border-radius:2px;padding:10px 12px;overflow:hidden}
+.card-t{font-size:10px;font-weight:500;color:#201F1E;margin-bottom:8px;display:flex;align-items:center;gap:4px}
+.kpi3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.kpi{background:#fff;border:0.5px solid #E1DFDD;border-radius:2px;padding:9px 11px}
+.kpi.b0{border-top:3px solid #0078D4}.kpi.b1{border-top:3px solid #107C10}.kpi.b2{border-top:3px solid #8764B8}
+.kpi.b3{border-top:3px solid #CA5010}.kpi.bgh{border-top:3px solid #24292F}
+.kpi-lbl{font-size:9px;color:#605E5C;font-weight:500;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+.kpi-val{font-size:20px;font-weight:500;color:#201F1E;line-height:1;margin-bottom:5px}
+.kpi-aa{display:flex;align-items:center;gap:5px}
+.kpi-lbl2{font-size:10px;color:#605E5C}
+.badge{font-size:9px;font-weight:500;padding:1px 6px;border-radius:2px}
+.grn{background:#DFF6DD;color:#107C10}.neu{background:#F3F2F1;color:#605E5C}
+.two{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:7px;align-items:stretch}
+.two-eq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:7px}
+.three-col{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.sec-pub-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:7px;align-items:start}
+.cbar-hdr{display:grid;grid-template-columns:110px 1fr 46px 62px 56px;gap:0;margin-bottom:3px;padding-bottom:3px;border-bottom:0.5px solid #E1DFDD;padding-right:4px}
+.cbar-hdr span{font-size:9px;font-weight:500;color:#A19F9D;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cbar-hdr span:not(:first-child){text-align:right}
+.cbar-row{display:grid;grid-template-columns:110px 1fr 46px 62px 56px;gap:0;align-items:center;padding:3px 0;padding-right:4px;border-bottom:0.5px solid #F8F7F6}
+.cbar-row:last-child{border-bottom:none}
+.sec-hdr{display:grid;grid-template-columns:90px 66px 65px 50px;gap:0;margin-bottom:3px;padding-bottom:3px;border-bottom:0.5px solid #E1DFDD}
+.sec-hdr span{font-size:9px;font-weight:500;color:#A19F9D;text-transform:uppercase;letter-spacing:.03em;text-align:right;white-space:nowrap}
+.sec-hdr span:first-child{text-align:left}
+.sec-row{display:grid;grid-template-columns:90px 66px 65px 50px;gap:0;align-items:center;padding:4px 0;border-bottom:0.5px solid #F8F7F6}
+.sec-row:last-child{border-bottom:none}
+.cname{display:flex;align-items:center;gap:5px;font-size:10px;color:#201F1E}
+.cdot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.ctrack{height:5px;background:#F3F2F1;border-radius:1px;overflow:hidden;margin:0 4px}
+.cfill{height:100%;border-radius:1px}
+.cnum{font-size:10px;text-align:right;color:#201F1E;padding-right:2px}
+.cdelta{font-size:9px;font-weight:500;text-align:right;padding-right:2px}
+.up{color:#107C10}.dw{color:#A4262C}
+.pub-hdr{display:grid;grid-template-columns:14px 1fr 48px;gap:0;margin-bottom:3px;padding-bottom:3px;border-bottom:0.5px solid #E1DFDD}
+.pub-hdr span{font-size:9px;font-weight:500;color:#A19F9D;text-transform:uppercase;letter-spacing:.03em}
+.pub-hdr span:last-child{text-align:right}
+.pub-row{display:grid;grid-template-columns:14px 1fr 48px;gap:0;align-items:start;padding:4px 0;border-bottom:0.5px solid #F8F7F6}
+.pub-row:last-child{border-bottom:none}
+.pub-num{font-size:9px;color:#A19F9D;padding-top:1px}
+.pub-title{font-size:10px;color:#201F1E;line-height:1.4;padding-right:6px}
+.pub-vistas{font-size:10px;font-weight:500;text-align:right;color:#201F1E;padding-top:1px}
+.ia-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:6px}
+.ia-k{background:#F5F3FF;border-radius:2px;padding:8px 11px;border-left:3px solid #7C3AED}
+.ia-k-lbl{font-size:9px;color:#7C3AED;font-weight:500;text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px}
+.ia-k-val{font-size:18px;font-weight:500;color:#201F1E;line-height:1;margin-bottom:4px}
+.ia-k-delta{display:flex;align-items:center;gap:4px}
+.sent-inline{display:flex;align-items:center;gap:7px}
+.sent-score{font-size:18px;font-weight:500;color:#107C10;line-height:1;flex-shrink:0}
+.sent-track{flex:1;height:5px;background:#E1DFDD;border-radius:3px;overflow:hidden}
+.sent-fill{height:100%;border-radius:3px;background:#107C10}
+.sent-bounds{display:flex;justify-content:space-between;font-size:8px;color:#A19F9D;margin-top:1px}
+.comments{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.comment-item{display:flex;align-items:flex-start;gap:6px}
+.comment-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:3px}
+.comment-text{font-size:10px;color:#444;line-height:1.6}
+.comment-text strong{color:#201F1E;font-weight:500}
+.rrss-card{background:#fff;border:0.5px solid #E1DFDD;border-radius:2px;padding:10px 12px;overflow:hidden}
+.rrss-header{display:flex;align-items:center;gap:6px;margin-bottom:10px;padding-bottom:8px}
+.rrss-icon{width:24px;height:24px;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rrss-net-name{font-size:12px;font-weight:500}
+.rrss-top2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.rrss-seg-lbl{font-size:9px;color:#605E5C;text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px}
+.rrss-seg-big{font-size:20px;font-weight:500;color:#201F1E;line-height:1;margin-bottom:3px}
+.rrss-kpi2{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px}
+.rrss-k{background:#F8F9FA;border-radius:2px;padding:7px 9px}
+.rrss-k-lbl{font-size:9px;color:#605E5C;text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px}
+.rrss-k-val{font-size:15px;font-weight:500;color:#201F1E;line-height:1;margin-bottom:3px}
+.rrss-k-delta{display:flex;align-items:center;gap:4px}
+.rrss-comment-single{display:flex;align-items:flex-start;gap:5px;margin-top:8px;padding-top:7px;border-top:0.5px solid #E1DFDD}
+.rrss-cdot{width:5px;height:5px;border-radius:50%;flex-shrink:0;margin-top:3px}
+.rrss-ctext{font-size:10px;color:#605E5C;line-height:1.55}
+.leg{display:flex;gap:10px;margin-top:4px}
+.li{display:flex;align-items:center;gap:3px;font-size:9px;color:#605E5C}
+.ld{width:14px;height:2px;border-radius:1px;flex-shrink:0}
+.bol-text{margin-top:8px;padding-top:7px;border-top:0.5px solid #E1DFDD;display:flex;flex-direction:column;gap:4px}
+.bol-line{display:flex;align-items:flex-start;gap:5px}
+.bol-dot{width:5px;height:5px;border-radius:50%;background:#CA5010;flex-shrink:0;margin-top:3px}
+.bol-p{font-size:10px;color:#605E5C;line-height:1.55}
+.repo-hdr{display:grid;grid-template-columns:1fr 52px 42px 52px;gap:0;margin-bottom:3px;padding-bottom:3px;border-bottom:0.5px solid #E1DFDD}
+.repo-hdr span{font-size:9px;font-weight:500;color:#A19F9D;text-transform:uppercase;letter-spacing:.03em;text-align:right}
+.repo-hdr span:first-child{text-align:left}
+.repo-row{display:grid;grid-template-columns:1fr 52px 42px 52px;gap:0;align-items:center;padding:4px 0;border-bottom:0.5px solid #F8F7F6}
+.repo-row:last-child{border-bottom:none}
+.repo-name{color:#0078D4;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px}
+.repo-val{font-size:10px;text-align:right;color:#605E5C}
+/* Conclusiones — 3 columnas */
+.conc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.conc-item{background:#F8F9FA;border-radius:2px;padding:10px 12px;border-left:3px solid #1D3557}
+.conc-label{font-size:9px;font-weight:500;color:#1D3557;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}
+.conc-text{font-size:10px;color:#444;line-height:1.65}
+/* Glosario */
+.glos-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 14px;margin-top:4px}
+.glos-item{display:flex;align-items:flex-start;gap:5px}
+.glos-num{font-size:9px;color:#A19F9D;font-weight:500;flex-shrink:0;min-width:14px;margin-top:1px}
+.glos-text{font-size:10px;color:#605E5C;line-height:1.55}
+.glos-text strong{color:#201F1E;font-weight:500}
+.foot{background:#fff;border-top:0.5px solid #E1DFDD;padding:5px 14px;display:flex;justify-content:space-between;align-items:center}
+.fn{font-size:9px;color:#A19F9D}
+.dots{display:flex;gap:3px}
+.dot{width:16px;height:3px;border-radius:2px;background:#D2D0CE}
+.dot.on{background:#0078D4}
+</style>
+
+<div class="db">
+  <div class="hd">
+    <div class="hd-left">
+      <div class="hd-logo">datos.gob.es</div>
+      <div>
+        <div class="hd-title">Resumen ejecutivo — métricas de impacto digital</div>
+        <div class="hd-sub">Iniciativa Aporta · Servicio de apoyo a la promoción del valor del dato · EXP. 001/26-SP</div>
+      </div>
+    </div>
+    <div class="hd-pill">Abril 2027 · datos ficticios</div>
+  </div>
+  <div class="fb">
+    <span class="fl">Periodo</span>
+    <span class="fv"><i class="ti ti-calendar" style="font-size:11px;color:#0078D4" aria-hidden="true"></i>1 abr 2027 – 30 abr 2027</span>
+    <span class="fl">Comparativa</span>
+    <span class="fv"><i class="ti ti-calendar-stats" style="font-size:11px;color:#0078D4" aria-hidden="true"></i>Año anterior (abr 2026)</span>
+    <span class="note">Datos ficticios · propuesta oferta técnica ReqT(145) · EXP. 001/26-SP</span>
+  </div>
+
+  <div class="body">
+
+    <!-- WEB -->
+    <div>
+      <div class="sec"><i class="ti ti-world" style="font-size:11px" aria-hidden="true"></i>Sitio web — datos.gob.es<span class="sec-line"></span></div>
+      <div class="kpi3" style="margin-bottom:6px">
+        <div class="kpi b0"><div class="kpi-lbl">Sesiones</div><div class="kpi-val">148.320</div><div class="kpi-aa"><span class="kpi-lbl2">YoY</span><span class="badge grn">+6,5%</span></div></div>
+        <div class="kpi b1"><div class="kpi-lbl">Usuarios activos</div><div class="kpi-val">97.614</div><div class="kpi-aa"><span class="kpi-lbl2">YoY</span><span class="badge grn">+6,8%</span></div></div>
+        <div class="kpi b2"><div class="kpi-lbl">Usuarios nuevos</div><div class="kpi-val">68.210</div><div class="kpi-aa"><span class="kpi-lbl2">YoY</span><span class="badge grn">+4,2%</span></div></div>
+      </div>
+      <div class="two" style="margin-bottom:6px">
+        <div class="card">
+          <div class="card-t"><i class="ti ti-chart-line" style="color:#0078D4;font-size:12px" aria-hidden="true"></i>Evolución de sesiones — últimos 12 meses</div>
+          <div style="position:relative;width:100%;height:80px"><svg id="ch-web" width="100%" height="80" viewBox="0 0 400 80" preserveAspectRatio="none"></svg></div>
+          <div class="leg"><div class="li"><div class="ld" style="background:#0078D4"></div>Sesiones</div><div class="li"><div class="ld" style="background:#107C10;opacity:.7"></div>Páginas vistas</div></div>
+        </div>
+        <div class="card">
+          <div class="card-t"><i class="ti ti-layout-distribute-vertical" style="color:#0078D4;font-size:12px" aria-hidden="true"></i>Distribución por canal</div>
+          <div class="cbar-hdr"><span>Canal</span><span style="text-align:left;padding-left:4px"> </span><span>%</span><span>Sesiones</span><span>Δ YoY</span></div>
+          <div id="canales"></div>
+        </div>
+      </div>
+      <div class="sec-pub-grid">
+        <div class="card">
+          <div class="card-t"><i class="ti ti-layout-grid" style="color:#0078D4;font-size:12px" aria-hidden="true"></i>Secciones*</div>
+          <div class="sec-hdr"><span>Sección</span><span>Nuevas pub.*</span><span>Pág. vistas</span><span>Δ YoY</span></div>
+          <div id="secciones"></div>
+        </div>
+        <div class="card">
+          <div class="card-t"><i class="ti ti-file-text" style="color:#0078D4;font-size:12px" aria-hidden="true"></i>Publicaciones más vistas · últimos 4 meses</div>
+          <div class="pub-hdr"><span>#</span><span>Título</span><span>Vistas</span></div>
+          <div id="publicaciones"></div>
+        </div>
+      </div>
+      <div class="ia-strip">
+        <div class="ia-k"><div class="ia-k-lbl">Sesiones desde LLMs*</div><div class="ia-k-val">5.318</div><div class="ia-k-delta"><span class="badge grn">+12,4% PoP</span></div></div>
+        <div class="ia-k"><div class="ia-k-lbl">Menciones totales en IA*</div><div class="ia-k-val">9.284</div><div class="ia-k-delta"><span class="badge grn">+18,6% PoP</span></div></div>
+        <div class="ia-k"><div class="ia-k-lbl">Sentimiento* (escala 1–100)</div><div class="sent-inline" style="margin-top:3px"><span class="sent-score">74</span><div style="flex:1"><div class="sent-track"><div class="sent-fill" style="width:74%"></div></div><div class="sent-bounds"><span>0</span><span>50</span><span>100</span></div></div><span class="badge grn">+6 pts PoP</span></div></div>
+      </div>
+      <div class="card" style="margin-top:6px">
+        <div class="comments">
+          <div class="comment-item"><div class="comment-dot" style="background:#0078D4"></div><div class="comment-text">Gran crecimiento en sesiones respecto a 2025, aunque disminuyeron en comparación con marzo debido al periodo festivo de Semana Santa. El usuario de datos.gob.es es un perfil profesional y disminuye su actividad en periodos vacacionales.</div></div>
+          <div class="comment-item"><div class="comment-dot" style="background:#107C10"></div><div class="comment-text">El <strong>catálogo concentra el 77%</strong> de las páginas vistas. Blog y Empresas lideran el crecimiento, impulsados por contenidos sobre IA y aplicaciones reutilizadoras.</div></div>
+          <div class="comment-item"><div class="comment-dot" style="background:#8764B8"></div><div class="comment-text">Los contenidos sobre <strong>datos geográficos, interoperabilidad e IA</strong> lideran las publicaciones recientes. Los <strong>9.284 menciones en LLMs</strong> y sentimiento de 74/100 reflejan una presencia positiva y creciente.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RRSS -->
+    <div>
+      <div class="sec"><i class="ti ti-brand-linkedin" style="font-size:11px" aria-hidden="true"></i>Redes sociales — X · LinkedIn · Instagram<span class="sec-line"></span></div>
+      <div class="three-col">
+        <div class="rrss-card">
+          <div class="rrss-header" style="border-bottom:2px solid #1DA1F2"><div class="rrss-icon" style="background:#E8F5FE"><i class="ti ti-brand-x" style="font-size:14px;color:#1DA1F2" aria-hidden="true"></i></div><span class="rrss-net-name" style="color:#1DA1F2">X (Twitter)</span></div>
+          <div class="rrss-top2"><div><div class="rrss-seg-lbl">Seguidores</div><div class="rrss-seg-big">22.480</div><span class="badge grn">+6,4% PoP</span></div><div><div class="rrss-seg-lbl">Publicaciones</div><div class="rrss-seg-big">104</div><span class="badge grn">+6,1% PoP</span></div></div>
+          <div class="rrss-kpi2"><div class="rrss-k"><div class="rrss-k-lbl">Engagement</div><div class="rrss-k-val">4,82%</div><div class="rrss-k-delta"><span class="badge grn" style="font-size:8px">+0,48 PoP</span></div></div><div class="rrss-k"><div class="rrss-k-lbl">Impresiones</div><div class="rrss-k-val">58.420</div><div class="rrss-k-delta"><span class="badge grn" style="font-size:8px">+13,1% PoP</span></div></div></div>
+          <div style="font-size:9px;color:#A19F9D;margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em;font-weight:500">Evolución seguidores</div>
+          <svg id="ch-x" width="100%" height="56" viewBox="0 0 200 56" preserveAspectRatio="none"></svg>
+          <div class="leg"><div class="li"><div class="ld" style="background:#1DA1F2"></div>Seguidores</div></div>
+          <div class="rrss-comment-single"><div class="rrss-cdot" style="background:#1DA1F2"></div><div class="rrss-ctext">Tendencia alcista en alcance orgánico con especial respuesta a los contenidos sobre IA y datos geográficos, concentrada en días laborables por la mañana.</div></div>
+        </div>
+        <div class="rrss-card">
+          <div class="rrss-header" style="border-bottom:2px solid #0077B5"><div class="rrss-icon" style="background:#E8F4FB"><i class="ti ti-brand-linkedin" style="font-size:14px;color:#0077B5" aria-hidden="true"></i></div><span class="rrss-net-name" style="color:#0077B5">LinkedIn</span></div>
+          <div class="rrss-top2"><div><div class="rrss-seg-lbl">Seguidores</div><div class="rrss-seg-big">19.840</div><span class="badge grn">+7,3% PoP</span></div><div><div class="rrss-seg-lbl">Publicaciones</div><div class="rrss-seg-big">22</div><span class="badge grn">+10,0% PoP</span></div></div>
+          <div class="rrss-kpi2"><div class="rrss-k"><div class="rrss-k-lbl">Engagement</div><div class="rrss-k-val">6,14%</div><div class="rrss-k-delta"><span class="badge grn" style="font-size:8px">+0,59 PoP</span></div></div><div class="rrss-k"><div class="rrss-k-lbl">Impresiones</div><div class="rrss-k-val">48.610</div><div class="rrss-k-delta"><span class="badge grn" style="font-size:8px">+7,6% PoP</span></div></div></div>
+          <div style="font-size:9px;color:#A19F9D;margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em;font-weight:500">Evolución seguidores</div>
+          <svg id="ch-li" width="100%" height="56" viewBox="0 0 200 56" preserveAspectRatio="none"></svg>
+          <div class="leg"><div class="li"><div class="ld" style="background:#0077B5"></div>Seguidores</div></div>
+          <div class="rrss-comment-single"><div class="rrss-cdot" style="background:#0077B5"></div><div class="rrss-ctext">Crecimiento sostenido en seguidores con mejor engagement del trimestre, liderado por artículos de expertos y casos de uso dirigidos a perfiles técnicos y de gestión.</div></div>
+        </div>
+        <div class="rrss-card">
+          <div class="rrss-header" style="border-bottom:2px solid #C13584"><div class="rrss-icon" style="background:#FCE8F6"><i class="ti ti-brand-instagram" style="font-size:14px;color:#C13584" aria-hidden="true"></i></div><span class="rrss-net-name" style="color:#C13584">Instagram</span></div>
+          <div class="rrss-top2"><div><div class="rrss-seg-lbl">Seguidores</div><div class="rrss-seg-big">642</div><span class="badge grn">+35,6% PoP</span></div><div><div class="rrss-seg-lbl">Publicaciones</div><div class="rrss-seg-big">19</div><span class="badge grn">+11,8% PoP</span></div></div>
+          <div class="rrss-kpi2"><div class="rrss-k"><div class="rrss-k-lbl">Engagement</div><div class="rrss-k-val">7,28%</div><div class="rrss-k-delta"><span class="badge grn" style="font-size:8px">+0,74 PoP</span></div></div><div class="rrss-k"><div class="rrss-k-lbl">Impresiones</div><div class="rrss-k-val">2.840</div><div class="rrss-k-delta"><span class="badge grn" style="font-size:8px">+43,4% PoP</span></div></div></div>
+          <div style="font-size:9px;color:#A19F9D;margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em;font-weight:500">Evolución seguidores</div>
+          <svg id="ch-ig" width="100%" height="56" viewBox="0 0 200 56" preserveAspectRatio="none"></svg>
+          <div class="leg"><div class="li"><div class="ld" style="background:#C13584"></div>Seguidores</div></div>
+          <div class="rrss-comment-single"><div class="rrss-cdot" style="background:#C13584"></div><div class="rrss-ctext">Fase de crecimiento acelerado con curva ascendente continua; los formatos carrusel generan la mayor interacción y consolidan la estrategia de contenido visual.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOLETÍN + GITHUB -->
+    <div class="two-eq">
+      <div>
+        <div class="sec"><i class="ti ti-mail" style="font-size:11px" aria-hidden="true"></i>Boletín — Brevo<span class="sec-line"></span></div>
+        <div class="card">
+          <div class="kpi3" style="margin-bottom:10px">
+            <div class="kpi b3"><div class="kpi-lbl">Suscriptores totales</div><div class="kpi-val" style="font-size:18px">4.842</div><div class="kpi-aa"><span class="kpi-lbl2">YoY</span><span class="badge grn">+8,9%</span></div></div>
+            <div class="kpi b3"><div class="kpi-lbl">Nuevos suscriptores</div><div class="kpi-val" style="font-size:18px">+74</div><div class="kpi-aa"><span class="kpi-lbl2">YoY</span><span class="badge grn">+13,8%</span></div></div>
+            <div class="kpi b3"><div class="kpi-lbl">CTR medio*</div><div class="kpi-val" style="font-size:18px">8,36%</div><div class="kpi-aa"><span class="kpi-lbl2">YoY</span><span class="badge grn">+0,8</span></div></div>
+          </div>
+          <div style="font-size:9px;color:#A19F9D;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px;font-weight:500">Tasa de apertura por envío vs media anual (42,1%)</div>
+          <div id="boletin-envios"></div>
+          <div class="bol-text">
+            <div class="bol-line"><div class="bol-dot"></div><div class="bol-p">Los dos envíos superan la media anual de apertura, consolidando una audiencia activa y fiel al boletín de la Iniciativa Aporta.</div></div>
+            <div class="bol-line"><div class="bol-dot"></div><div class="bol-p">El segundo envío, dedicado a la visualización de datos geográficos, alcanza el máximo del trimestre con un 51,2% de tasa de apertura.</div></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="sec"><i class="ti ti-brand-github" style="font-size:11px" aria-hidden="true"></i>GitHub — github.com/datosgobes<span class="sec-line"></span></div>
+        <div class="card">
+          <div class="kpi3" style="margin-bottom:10px">
+            <div class="kpi bgh"><div class="kpi-lbl">Visitas</div><div class="kpi-val" style="font-size:18px">3.840</div><div class="kpi-aa"><span class="kpi-lbl2">PoP</span><span class="badge grn">+22,4%</span></div></div>
+            <div class="kpi bgh"><div class="kpi-lbl">Clonados</div><div class="kpi-val" style="font-size:18px">247</div><div class="kpi-aa"><span class="kpi-lbl2">PoP</span><span class="badge grn">+31,4%</span></div></div>
+            <div class="kpi bgh"><div class="kpi-lbl">Issues abiertos</div><div class="kpi-val" style="font-size:18px">18</div><div class="kpi-aa"><span class="kpi-lbl2">PoP</span><span class="badge grn">+5</span></div></div>
+          </div>
+          <div style="font-size:9px;color:#A19F9D;text-transform:uppercase;letter-spacing:.04em;margin-bottom:5px;font-weight:500">Repositorios más activos</div>
+          <div class="repo-hdr"><span>Repositorio</span><span>Sesiones</span><span><i class="ti ti-star" style="font-size:10px" aria-hidden="true"></i></span><span>Clonados</span></div>
+          <div id="repos"></div>
+          <div style="display:flex;align-items:flex-start;gap:6px;margin-top:10px;padding-top:8px;border-top:0.5px solid #E1DFDD">
+            <div style="width:5px;height:5px;border-radius:50%;background:#24292F;flex-shrink:0;margin-top:3px"></div>
+            <div style="font-size:10px;color:#605E5C;line-height:1.6">El repositorio consolida su posición como referencia técnica en datos abiertos. El crecimiento en clonados e issues refleja una comunidad desarrolladora cada vez más participativa y comprometida con el proyecto.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HITOS Y CONCLUSIONES — 3 puntos -->
+    <div>
+      <div class="sec"><i class="ti ti-bulb" style="font-size:11px" aria-hidden="true"></i>Hitos y conclusiones — abril 2027<span class="sec-line"></span></div>
+      <div class="card">
+        <div class="conc-grid">
+          <div class="conc-item">
+            <div class="conc-label">Participación clave</div>
+            <div class="conc-text">Intervención en el <strong>V Encuentro Nacional de Datos Abiertos</strong> para impulsar la reutilización de información pública, reforzando el papel de la Iniciativa Aporta como referente nacional del ecosistema de datos abiertos.</div>
+          </div>
+          <div class="conc-item">
+            <div class="conc-label">Impulso de conocimiento</div>
+            <div class="conc-text">Publicación del nuevo <strong>informe sobre el impacto socioeconómico de los datos abiertos</strong>, que analiza el valor generado por la reutilización de datos públicos en los sectores productivos, la investigación y la administración.</div>
+          </div>
+          <div class="conc-item">
+            <div class="conc-label">Coordinación institucional</div>
+            <div class="conc-text">Reuniones con la <strong>Agencia Estatal de Meteorología (AEMET)</strong> para mejorar la interoperabilidad de su catálogo de datos, avanzando en la integración y federación de sus conjuntos de datos en datos.gob.es.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GLOSARIO -->
+    <div class="card" style="border-top:2px solid #E1DFDD">
+      <div style="font-size:9px;font-weight:500;color:#A19F9D;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">* Notas y definiciones</div>
+      <div class="glos-grid">
+        <div class="glos-item"><div class="glos-num">1.</div><div class="glos-text"><strong>CTR medio del boletín:</strong> porcentaje de destinatarios que hicieron clic en al menos un enlace del envío respecto al total de emails correctamente entregados.</div></div>
+        <div class="glos-item"><div class="glos-num">2.</div><div class="glos-text"><strong>PoP (Period over Period):</strong> datos comparados sobre el periodo inmediatamente anterior (mes anterior al de referencia del informe).</div></div>
+        <div class="glos-item"><div class="glos-num">3.</div><div class="glos-text"><strong>YoY (Year over Year):</strong> datos comparados con el mismo periodo del año anterior, permitiendo eliminar el efecto de la estacionalidad en el análisis.</div></div>
+        <div class="glos-item"><div class="glos-num">4.</div><div class="glos-text"><strong>Sesiones desde LLMs:</strong> visitas a datos.gob.es originadas desde un enlace generado por un modelo de lenguaje (ChatGPT, Gemini, Perplexity, Copilot o Claude) en respuesta a una consulta de usuario.</div></div>
+        <div class="glos-item"><div class="glos-num">5.</div><div class="glos-text"><strong>Menciones:</strong> cantidad de veces que datos.gob.es aparece en respuestas de IA a preguntas sin marca. Muestra el recuento bruto y el porcentaje dentro de todas las respuestas relacionadas con el sector de datos abiertos.</div></div>
+        <div class="glos-item"><div class="glos-num">6.</div><div class="glos-text"><strong>Sentimiento:</strong> distribución entre menciones favorables y no favorables de la marca en respuestas de IA. Escala de 1 (muy negativo) a 100 (muy positivo). Indica si la estrategia de contenidos tiene acogida positiva entre los usuarios de IA generativa.</div></div>
+        <div class="glos-item" style="grid-column:1/-1"><div class="glos-num">7.</div><div class="glos-text"><strong>Nuevas publicaciones (tabla Secciones):</strong> contabiliza los contenidos nuevos generados en el mes en cada sección del portal. En el caso del Catálogo, corresponde a los nuevos datasets publicados durante el periodo de referencia del informe.</div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="foot">
+    <span class="fn"><i class="ti ti-info-circle" style="font-size:10px;vertical-align:-1px" aria-hidden="true"></i> GA4 · GTM · Metricool · Brevo · GitHub API · Datos ficticios · Perfil 4 Especialista en análisis digital · EXP. 001/26-SP</span>
+    <div style="display:flex;align-items:center;gap:6px">
+      <span style="font-size:9px;color:#A19F9D">ReqT(145) · ReqF(32)</span>
+      <div class="dots"><div class="dot on"></div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var meses=['may','jun','jul','ago','sep','oct','nov','dic','ene','feb','mar','abr'];
+  function drawLine(id,dA,dB,cA,cB,lbs){
+    var svg=document.getElementById(id);if(!svg)return;
+    var W=400,H=76,pt={t:6,r:6,b:14,l:6};
+    var iw=W-pt.l-pt.r,ih=H-pt.t-pt.b;
+    var all=dA.concat(dB||[]);
+    var mx=Math.max.apply(null,all),mn=Math.min.apply(null,all)*.85;
+    function xp(i){return pt.l+i/(dA.length-1)*iw;}
+    function yp(v){return pt.t+(1-(v-mn)/(mx-mn))*ih;}
+    function pts(a){return a.map(function(v,i){return xp(i)+','+yp(v);}).join(' ');}
+    var aA=dA.map(function(v,i){return xp(i)+','+yp(v);}).join(' ');
+    aA=xp(0)+','+yp(mn)+' '+aA+' '+xp(dA.length-1)+','+yp(mn);
+    var h='<defs><linearGradient id="g'+id+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+cA+'" stop-opacity=".18"/><stop offset="1" stop-color="'+cA+'" stop-opacity="0"/></linearGradient></defs>';
+    for(var g=0;g<3;g++){var gy=pt.t+g*(ih/3);h+='<line x1="'+pt.l+'" y1="'+gy+'" x2="'+(W-pt.r)+'" y2="'+gy+'" stroke="#E1DFDD" stroke-width=".5"/>';}
+    h+='<polygon points="'+aA+'" fill="url(#g'+id+')"/>';
+    if(dB)h+='<polyline points="'+pts(dB)+'" fill="none" stroke="'+cB+'" stroke-width="1.5" stroke-opacity=".7" stroke-linejoin="round"/>';
+    h+='<polyline points="'+pts(dA)+'" fill="none" stroke="'+cA+'" stroke-width="2" stroke-linejoin="round"/>';
+    var last=dA.length-1;
+    h+='<circle cx="'+xp(last)+'" cy="'+yp(dA[last])+'" r="3" fill="'+cA+'"/>';
+    if(lbs)for(var i=0;i<lbs.length;i++)h+='<text x="'+xp(i)+'" y="'+(H-1)+'" text-anchor="middle" font-size="8" fill="#A19F9D">'+lbs[i]+'</text>';
+    svg.innerHTML=h;
+  }
+  function drawRRSSLine(id,data,color){
+    var svg=document.getElementById(id);if(!svg)return;
+    var W=200,H=54,pt={t:4,r:4,b:11,l:4};
+    var iw=W-pt.l-pt.r,ih=H-pt.t-pt.b;
+    var mx=Math.max.apply(null,data)*1.02,mn=Math.min.apply(null,data)*.97;
+    function xp(i){return pt.l+i/(data.length-1)*iw;}
+    function yp(v){return pt.t+(1-(v-mn)/(mx-mn))*ih;}
+    function pts(){return data.map(function(v,i){return xp(i)+','+yp(v);}).join(' ');}
+    var area=data.map(function(v,i){return xp(i)+','+yp(v);}).join(' ');
+    area=xp(0)+','+yp(mn)+' '+area+' '+xp(data.length-1)+','+yp(mn);
+    var h='<defs><linearGradient id="gr'+id+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+color+'" stop-opacity=".2"/><stop offset="1" stop-color="'+color+'" stop-opacity="0"/></linearGradient></defs>';
+    for(var g=0;g<3;g++){var gy=pt.t+g*(ih/2.5);h+='<line x1="'+pt.l+'" y1="'+gy+'" x2="'+(W-pt.r)+'" y2="'+gy+'" stroke="#F3F2F1" stroke-width=".5"/>';}
+    h+='<polygon points="'+area+'" fill="url(#gr'+id+')"/>';
+    h+='<polyline points="'+pts()+'" fill="none" stroke="'+color+'" stroke-width="2" stroke-linejoin="round"/>';
+    var last=data.length-1;
+    h+='<circle cx="'+xp(last)+'" cy="'+yp(data[last])+'" r="3" fill="'+color+'"/>';
+    h+='<text x="'+(xp(last)-4)+'" y="'+(yp(data[last])-4)+'" text-anchor="end" font-size="8" fill="'+color+'" font-weight="500">'+data[last].toLocaleString('es-ES')+'</text>';
+    var steps=[0,3,6,9,11];
+    for(var k=0;k<steps.length;k++)h+='<text x="'+xp(steps[k])+'" y="'+(H-1)+'" text-anchor="middle" font-size="7" fill="#A19F9D">'+meses[steps[k]]+'</text>';
+    svg.innerHTML=h;
+  }
+  drawLine('ch-web',[139,148,132,129,109,179,151,157,124,149,230,148],[261,253,219,178,140,291,294,302,213,239,254,279],'#0078D4','#107C10',meses);
+  drawRRSSLine('ch-x',[21140,21280,21390,21450,21520,21680,21740,21820,21900,22010,22180,22480],'#1DA1F2');
+  drawRRSSLine('ch-li',[18490,18620,18740,18840,18960,19080,19180,19280,19400,19520,19680,19840],'#0077B5');
+  drawRRSSLine('ch-ig',[473,488,502,516,534,552,572,590,604,618,628,642],'#C13584');
+  var canales=[
+    {n:'Orgánico',c:'#0078D4',pct:48.1,ses:'71.340',d:'+4,8%',u:true,bold:true},
+    {n:'Directo',c:'#107C10',pct:27.6,ses:'40.980',d:'+9,2%',u:true},
+    {n:'Referral',c:'#8764B8',pct:12.1,ses:'17.940',d:'+6,4%',u:true},
+    {n:'Unassigned',c:'#C8A400',pct:8.2,ses:'12.160',d:'+1,8%',u:true},
+    {n:'Social',c:'#008272',pct:3.2,ses:'4.750',d:'+18,7%',u:true},
+    {n:'Email',c:'#CA5010',pct:0.8,ses:'1.150',d:'−5,2%',u:false},
+  ];
+  var cEl=document.getElementById('canales');
+  if(cEl)cEl.innerHTML=canales.map(function(c){var bW=Math.round(c.pct/canales[0].pct*100);return '<div class="cbar-row"><div class="cname"><div class="cdot" style="background:'+c.c+'"></div><span style="'+(c.bold?'font-weight:500;color:#0050A0':'')+'">'+c.n+'</span></div><div style="padding:0 4px"><div class="ctrack"><div class="cfill" style="width:'+bW+'%;background:'+c.c+'"></div></div></div><div class="cnum">'+c.pct+'%</div><div class="cnum">'+c.ses+'</div><div class="cdelta '+(c.u?'up':'dw')+'">'+c.d+'</div></div>';}).join('');
+  var secciones=[
+    {n:'Catálogo',c:'#0078D4',pubs:'12.248',pv:116268,d:'+4,2%',u:true,bold:true},
+    {n:'Blog',c:'#107C10',pubs:'8',pv:9338,d:'+9,0%',u:true},
+    {n:'Aplicaciones',c:'#CA5010',pubs:'4',pv:8798,d:'−7,0%',u:false},
+    {n:'Empresas',c:'#008272',pubs:'6',pv:8140,d:'+14,0%',u:true},
+    {n:'Conocimiento',c:'#8764B8',pubs:'6',pv:5108,d:'+3,1%',u:true},
+    {n:'Noticias',c:'#C8A400',pubs:'7',pv:3078,d:'−4,0%',u:false},
+  ];
+  var sEl=document.getElementById('secciones');
+  if(sEl)sEl.innerHTML=secciones.map(function(s){var fmt=s.pv>=1000?Math.round(s.pv/100)/10+'K':s.pv;return '<div class="sec-row"><div class="cname"><div class="cdot" style="background:'+s.c+'"></div><span style="'+(s.bold?'font-weight:500;color:#0050A0':'')+'">'+s.n+'</span></div><div class="cnum">'+s.pubs+'</div><div class="cnum">'+fmt+'</div><div class="cdelta '+(s.u?'up':'dw')+'">'+s.d+'</div></div>';}).join('');
+  var pubs=[
+    {t:'Visualiza datos abiertos geográficos: formato y herramientas',v:286},
+    {t:'Interoperabilidad: el arte invisible de conectar datos, sistemas y personas',v:228},
+    {t:'Recomendaciones para la gobernanza de los datos',v:207},
+    {t:'Mapa de poblaciones y Zonas Climáticas de España',v:175},
+    {t:'Buenas prácticas para explorar y analizar datos con IA',v:170},
+  ];
+  var pEl=document.getElementById('publicaciones');
+  if(pEl)pEl.innerHTML=pubs.map(function(p,i){return '<div class="pub-row"><span class="pub-num">'+(i+1)+'.</span><span class="pub-title">'+p.t+'</span><span class="pub-vistas">'+p.v+'</span></div>';}).join('');
+  var envios=[{n:'Envío 1 · 8 abr',ap:46.8,color:'#CA5010'},{n:'Envío 2 · 16 abr',ap:51.2,color:'#107C10'}];
+  var bEl=document.getElementById('boletin-envios');
+  if(bEl){var media=42.1,maxA=56;bEl.innerHTML=envios.map(function(e){var mW=Math.round(media/maxA*100),eW=Math.round(e.ap/maxA*100);return '<div style="margin-bottom:6px"><div style="display:flex;justify-content:space-between;font-size:10px;color:#605E5C;margin-bottom:2px"><span>'+e.n+'</span><span style="font-weight:500;color:'+e.color+'">'+e.ap+'%</span></div><div style="position:relative;height:7px;background:#F3F2F1;border-radius:3px;overflow:hidden"><div style="height:100%;border-radius:3px;background:#E1DFDD;position:absolute;width:'+mW+'%;top:0;left:0"></div><div style="height:100%;border-radius:3px;background:'+e.color+';position:absolute;width:'+eW+'%;top:0;left:0"></div></div><div style="font-size:8px;color:#A19F9D;margin-top:2px">media anual 42,1%</div></div>';}).join('');}
+  var repos=[{n:'dcat-ap-es-validator',ses:480,stars:18,clones:86},{n:'datos-ejec-python',ses:312,stars:14,clones:64},{n:'mcp-datos-gob-es',ses:1840,stars:24,clones:58},{n:'open-data-quality',ses:284,stars:8,clones:39}];
+  var rEl=document.getElementById('repos');
+  if(rEl)rEl.innerHTML=repos.map(function(r){return '<div class="repo-row"><span class="repo-name">'+r.n+'</span><span class="repo-val">'+r.ses.toLocaleString('es-ES')+'</span><span class="repo-val">'+r.stars+'</span><span class="repo-val">'+r.clones+'</span></div>';}).join('');
+})();
+</script>
+  </div>
+</body>
+</html>
